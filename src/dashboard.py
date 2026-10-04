@@ -259,9 +259,10 @@ with tab_try:
             a.metric(f"Sentiment - {s.entity}", f"{s.sentiment_score:+.2f}", s.sentiment_label)
             b.metric("Event", s.event_type, f"conf {s.event_confidence:.0%}")
             c.metric("Impact", f"{s.impact_score}/10")
-        st.json([s.to_dict() for s in out])
         top = out[0]
         if top.impact_score > threshold and top.event_type in SCENARIOS:
             r = StressTester(load_portfolio(config.PORTFOLIO_CSV)).run_scenario(top.event_type, top.impact_score)
             st.warning(f"This would trigger a **{r['scenario']}** stress test: "
                        f"P&L {money(r['pnl'])} ({r['pnl_pct']:+.2%})")
+        st.caption("Structured output")
+        st.json([s.to_dict() for s in out], expanded=False)

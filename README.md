@@ -3,7 +3,7 @@
 **Candidate Name:** Madapati Naga Durga Abhinav Sai
 **College Email ID:** abhinavsaimadapati@gmail.com
 **College / Campus:** VIT-AP University
-**Demo Video:** [docs/demo_clip.mp4](docs/demo_clip.mp4) | [docs/demo_clip.gif](docs/demo_clip.gif) (Local Video Clip & Animated Preview)
+**Demo Video:** [docs/demo_video.mp4](docs/demo_video.mp4) (narrated product film with live dashboard walkthrough · captions: [docs/demo_video.srt](docs/demo_video.srt))
 **Demo Video Link (YouTube):** [YouTube - unlisted]
 **Slide Deck:** [docs/presentation.pdf](docs/presentation.pdf) | [docs/presentation.pptx](docs/presentation.pptx)
 
@@ -191,7 +191,7 @@ ingestion to streaming (Kafka) and backtest the rebalancer against equal weight.
 ├── data/                    all input data (synthetic)
 ├── output/                  generated signals, weight history, stress results
 ├── tests/                   pytest suite
-└── docs/                    architecture.png, presentation.pdf/.pptx, demo clips, and scripts
+└── docs/                    architecture.png, presentation.pdf/.pptx, demo_video.mp4, and the scripts that build them
 ```
 
 ## License

@@ -1,0 +1,351 @@
+1
+00:00:00,671 --> 00:00:04,068
+A downgrade. A missile strike. An inflation
+
+2
+00:00:04,068 --> 00:00:07,062
+print that comes in hot. Markets react
+
+3
+00:00:07,062 --> 00:00:09,434
+to words, long before those words show
+
+4
+00:00:09,434 --> 00:00:10,299
+up in prices.
+
+5
+00:00:11,099 --> 00:00:13,430
+But there are thousands of these stories
+
+6
+00:00:13,430 --> 00:00:16,461
+every hour. No team can read them
+
+7
+00:00:16,461 --> 00:00:18,268
+all. And raw text can't feed a
+
+8
+00:00:18,268 --> 00:00:20,979
+model, a limit system, or a portfolio.
+
+9
+00:00:21,926 --> 00:00:24,741
+This is RiskPulse. An AI and NLP
+
+10
+00:00:24,741 --> 00:00:27,550
+risk engine that reads financial news and
+
+11
+00:00:27,550 --> 00:00:30,735
+social media, and turns every story into
+
+12
+00:00:30,735 --> 00:00:32,464
+a structured risk signal.
+
+13
+00:00:33,393 --> 00:00:35,895
+Here's how it works. A headline comes
+
+14
+00:00:35,895 --> 00:00:38,294
+in. The engine links it to the
+
+15
+00:00:38,294 --> 00:00:41,186
+company it's about, scores the sentiment from
+
+16
+00:00:41,186 --> 00:00:43,667
+minus one to plus one, classifies the
+
+17
+00:00:43,667 --> 00:00:46,165
+type of event, and predicts its market
+
+18
+00:00:46,165 --> 00:00:47,757
+impact on a scale of one to
+
+19
+00:00:47,757 --> 00:00:50,661
+ten. Every score comes with the words
+
+20
+00:00:50,661 --> 00:00:53,065
+that produced it, so an analyst can
+
+21
+00:00:53,065 --> 00:00:54,001
+see exactly why.
+
+22
+00:00:54,972 --> 00:00:57,529
+Those signals are published to a file,
+
+23
+00:00:57,490 --> 00:00:59,387
+a REST API, and a live stream.
+
+24
+00:00:59,387 --> 00:01:02,387
+Two modules subscribe to that stream. A
+
+25
+00:01:02,387 --> 00:01:06,027
+tactical index rebalancer, and a strategic stress
+
+26
+00:01:06,027 --> 00:01:08,532
+tester for a wholesale banking book. Let's
+
+27
+00:01:08,532 --> 00:01:10,225
+see it running.
+
+28
+00:01:11,025 --> 00:01:13,683
+This is the dashboard. The signal feed
+
+29
+00:01:13,683 --> 00:01:16,681
+shows every signal over time. Bubble size
+
+30
+00:01:16,681 --> 00:01:19,745
+is impact, colour is event type. Below
+
+31
+00:01:19,745 --> 00:01:22,157
+that is impact weighted sentiment for each
+
+32
+00:01:22,157 --> 00:01:24,973
+company, so Boeing, Pfizer and Intel stand
+
+33
+00:01:24,973 --> 00:01:27,022
+out as the most negative names this
+
+34
+00:01:27,022 --> 00:01:29,566
+week. And the table at the bottom
+
+35
+00:01:29,566 --> 00:01:32,943
+is the raw structured output, with sentiment,
+
+36
+00:01:32,803 --> 00:01:35,814
+event type, confidence and impact for every
+
+37
+00:01:35,814 --> 00:01:36,518
+document.
+
+38
+00:01:37,525 --> 00:01:40,055
+Module A is the tactical index rebalancer.
+
+39
+00:01:40,055 --> 00:01:43,032
+Each stock's weight is its base weight
+
+40
+00:01:43,032 --> 00:01:46,416
+times the exponential of its smoothed sentiment,
+
+41
+00:01:46,120 --> 00:01:49,376
+with floors, a fifteen percent single name
+
+42
+00:01:49,376 --> 00:01:52,525
+cap, and a ten percent turnover limit,
+
+43
+00:01:52,089 --> 00:01:54,566
+so a single tweet can't swing the
+
+44
+00:01:54,566 --> 00:01:57,434
+index. After the Strait tensions and the
+
+45
+00:01:57,434 --> 00:02:00,424
+chip export controls, Apple and Nvidia are
+
+46
+00:02:00,424 --> 00:02:02,720
+cut by around four and a half
+
+47
+00:02:02,720 --> 00:02:05,840
+points, while Microsoft, Alphabet and JP Morgan
+
+48
+00:02:05,840 --> 00:02:08,582
+gain on deal, legal and earnings news.
+
+49
+00:02:08,582 --> 00:02:11,174
+If I raise the sentiment tilt in
+
+50
+00:02:11,174 --> 00:02:14,596
+the sidebar, the index reacts more aggressively.
+
+51
+00:02:15,396 --> 00:02:17,733
+Module B is the strategic stress tester.
+
+52
+00:02:17,733 --> 00:02:20,709
+The portfolio is a synthetic two hundred
+
+53
+00:02:20,709 --> 00:02:23,519
+and eighty three million dollar wholesale banking
+
+54
+00:02:23,519 --> 00:02:27,007
+book of loans, bonds, swaps, credit default
+
+55
+00:02:27,007 --> 00:02:30,182
+swaps and equity. Whenever an event scores
+
+56
+00:02:30,182 --> 00:02:33,222
+above seven, the matching scenario is applied
+
+57
+00:02:33,222 --> 00:02:36,264
+automatically, scaled by the impact score. For
+
+58
+00:02:36,264 --> 00:02:39,301
+the sovereign downgrade, the book loses about
+
+59
+00:02:39,301 --> 00:02:41,795
+twenty eight million, close to ten percent.
+
+60
+00:02:41,795 --> 00:02:44,859
+The waterfall shows where the loss comes
+
+61
+00:02:44,859 --> 00:02:47,692
+from. About two thirds is credit spread
+
+62
+00:02:47,692 --> 00:02:50,685
+widening, led by the commercial real estate
+
+63
+00:02:50,685 --> 00:02:52,837
+loan, and most of the rest is
+
+64
+00:02:52,837 --> 00:02:55,508
+the equity sell off. Rate cuts are
+
+65
+00:02:55,508 --> 00:02:58,101
+mapped to a growth scare scenario, not
+
+66
+00:02:58,101 --> 00:02:59,123
+a hawkish one.
+
+67
+00:03:00,963 --> 00:03:03,315
+Finally, you can paste any headline and
+
+68
+00:03:03,315 --> 00:03:05,845
+score it live. This is the same
+
+69
+00:03:05,845 --> 00:03:07,973
+engine the API exposes on the analyze
+
+70
+00:03:07,973 --> 00:03:11,653
+endpoint. Here, a downgrade of Goldman Sachs
+
+71
+00:03:11,653 --> 00:03:14,038
+with contagion fears is linked to Goldman,
+
+72
+00:03:14,038 --> 00:03:17,730
+scored strongly negative, classified as a credit
+
+73
+00:03:17,730 --> 00:03:20,282
+event, with an impact of eight point
+
+74
+00:03:20,282 --> 00:03:22,730
+six out of ten. That is high
+
+75
+00:03:22,730 --> 00:03:25,166
+enough to trigger a credit contagion stress
+
+76
+00:03:25,166 --> 00:03:27,999
+test straight away, and the dashboard shows
+
+77
+00:03:27,999 --> 00:03:29,102
+the projected loss.
+
+78
+00:03:30,430 --> 00:03:33,598
+Across the sample week, sixty documents became
+
+79
+00:03:33,598 --> 00:03:36,941
+sixty eight signals, forty six rebalances, and
+
+80
+00:03:36,941 --> 00:03:40,155
+ten automatic stress tests. News and social
+
+81
+00:03:40,155 --> 00:03:42,571
+posts agreed on direction in twenty nine
+
+82
+00:03:42,571 --> 00:03:45,397
+of thirty stories. And the worst case,
+
+83
+00:03:44,848 --> 00:03:48,441
+a sovereign downgrade, was valued at a
+
+84
+00:03:48,441 --> 00:03:51,019
+twenty eight million dollar loss the moment
+
+85
+00:03:51,019 --> 00:03:52,510
+the headline arrived.
+
+86
+00:03:53,310 --> 00:03:56,936
+RiskPulse. From headlines to risk signals, in
+
+87
+00:03:56,936 --> 00:04:00,311
+real time. Built by Madapati Naga Durga
+
+88
+00:04:00,311 --> 00:04:04,210
+Abhinav Sai, at VIT-AP University. Thank you.

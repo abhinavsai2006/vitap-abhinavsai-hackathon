@@ -6,3 +6,8 @@ venv/
 .streamlit/secrets.toml
 .DS_Store
 .claude/
+videos/
+docs/video/build/
+*.zip
+1.Submission Guidelines_External.docx.md
+docs/demo_video.mp4
