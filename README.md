@@ -1,7 +1,7 @@
 # RiskPulse: AI/NLP Risk Engine - S&P Global & Crisil Campus Hackathon
 
 **Candidate Name:** Madapati Naga Durga Abhinav Sai
-**College Email ID:** mndabhinavsai@gmail.com
+**College Email ID:** abhinavsaimadapati@gmail.com
 **College / Campus:** VIT-AP University
 **Demo Video:** [docs/demo_clip.mp4](docs/demo_clip.mp4) | [docs/demo_clip.gif](docs/demo_clip.gif) (Local Video Clip & Animated Preview)
 **Demo Video Link (YouTube):** [YouTube - unlisted]
