@@ -104,8 +104,8 @@ such as a Yahoo Finance or Google News search feed.
 Runtime: Python 3.11-3.13, tested on Windows 11.
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/abhinavsai2006/vitap-abhinavsai-hackathon.git
+cd vitap-abhinavsai-hackathon
 pip install -r requirements.txt
 
 python main.py run              # ingest -> signals -> both modules, prints a report
