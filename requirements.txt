@@ -1,0 +1,13 @@
+pandas>=2.0
+plotly>=5.18
+streamlit>=1.32
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.0
+pytest>=8.0
+# only needed to rebuild docs/architecture.png and docs/presentation.pptx
+matplotlib>=3.8
+python-pptx>=0.6.23
+# optional: transformer sentiment backend (FinBertSentiment)
+# transformers>=4.40
+# torch>=2.2

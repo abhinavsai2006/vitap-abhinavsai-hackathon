@@ -1,0 +1,19 @@
+ticker,name,sector,base_weight,aliases
+AAPL,Apple Inc.,Information Technology,0.09,Apple|iPhone|Tim Cook
+MSFT,Microsoft Corp.,Information Technology,0.09,Microsoft|Azure|Satya Nadella
+NVDA,NVIDIA Corp.,Information Technology,0.08,Nvidia|Jensen Huang
+AMZN,Amazon.com Inc.,Consumer Discretionary,0.08,Amazon|AWS
+GOOGL,Alphabet Inc.,Communication Services,0.07,Alphabet|Google|YouTube
+META,Meta Platforms Inc.,Communication Services,0.06,Meta|Facebook|Instagram|Zuckerberg
+TSLA,Tesla Inc.,Consumer Discretionary,0.05,Tesla|Elon Musk
+JPM,JPMorgan Chase & Co.,Financials,0.06,JPMorgan|JP Morgan|Jamie Dimon
+BAC,Bank of America Corp.,Financials,0.04,Bank of America|BofA
+GS,Goldman Sachs Group Inc.,Financials,0.04,Goldman Sachs|Goldman
+XOM,Exxon Mobil Corp.,Energy,0.05,Exxon|ExxonMobil
+CVX,Chevron Corp.,Energy,0.04,Chevron
+JNJ,Johnson & Johnson,Health Care,0.05,Johnson & Johnson|J&J
+PFE,Pfizer Inc.,Health Care,0.04,Pfizer
+BA,Boeing Co.,Industrials,0.04,Boeing|737 MAX
+WMT,Walmart Inc.,Consumer Staples,0.05,Walmart
+KO,Coca-Cola Co.,Consumer Staples,0.04,Coca-Cola|Coke
+INTC,Intel Corp.,Information Technology,0.03,Intel
